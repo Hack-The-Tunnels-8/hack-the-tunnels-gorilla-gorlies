@@ -6,8 +6,8 @@ import "./Login.style.scss";
 
 function Login() {
   const [message, setMessage] = useState(null);
-  const [email, setEmail] = useState(null);
-  const [pass, setPass] = useState(null);
+  const [email, setEmail] = useState("");
+  const [pass, setPass] = useState("");
   const { loggedIn, login } = useAccountContext();
   const navigate = useNavigate();
 
