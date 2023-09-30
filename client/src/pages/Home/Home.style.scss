@@ -11,13 +11,10 @@
 
   &__products {
     margin: 1rem;
-    display: grid;
-    grid-template: 1fr 1fr/ 1fr 1fr;
-    gap: 1rem;
-    display: grid;
-    grid-template-columns: auto auto auto;
+    justify-content: center;
+    display:flex;
     flex-wrap: wrap;
-    gap: 5em;
+    gap: 3.5em;
 
     a {
       text-decoration: none;
