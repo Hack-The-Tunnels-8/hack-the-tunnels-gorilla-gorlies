@@ -23,6 +23,11 @@ export const find = async (id: string): Promise<Result<Order, Error>> => {
   return Ok(order);
 };
 
+export const all = async (): Promise<Result<Order[], Error>> => {
+  const order = await prisma.order.findMany();
+  return Ok(order);
+};
+
 interface CustomerInput {
   name: string;
   email: string;
