@@ -26,8 +26,6 @@ function Login() {
     }
   }, [loggedIn, navigate]);
 
-  console.log(email);
-  console.log(pass);
   return (
     <Page>
       <div className="login-page">
