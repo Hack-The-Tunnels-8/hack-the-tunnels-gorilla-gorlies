@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Page } from "../../components";
 import { ServiceAPI } from "../../infrastructure";
+import { ProductPreviewCard } from "../../components";
 import "./Checkout.style.scss";
 
 function Checkout() {
@@ -44,13 +45,19 @@ function Checkout() {
         {message && <p>{message}</p>}
         {product && (
           <>
-            <h2>You are about to make an order with the following product:</h2>
+            <h2 className = "checkoutText1">You are about to make an order with the following product:</h2>
             <div className="checkout-page__product">
-              <h3>Title: {product.title}</h3>
+              <h3 className = "checkoutText2">Title: {product.title}</h3>
             </div>
             <button onClick={() => createOrder()}>
               Create Order (with customer set in code)
             </button>
+            <img className = "productimage"
+              src = {product.imageUrl}
+            />
+            <h2 className = "priceText">Price:{product.price}</h2>
+
+            
           </>
         )}
       </div>
