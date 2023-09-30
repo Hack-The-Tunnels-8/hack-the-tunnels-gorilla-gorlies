@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
 .home-page {
+  *{
+    font-family: 'Syne Mono', monospace;
+  }
+
   &__title {
     color: red;
   }

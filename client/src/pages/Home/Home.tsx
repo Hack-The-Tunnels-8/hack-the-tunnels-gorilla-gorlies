@@ -4,6 +4,7 @@ import { Page, ProductPreviewCard } from "../../components";
 import { ServiceAPI } from "../../infrastructure";
 import "./Home.style.scss";
 
+
 function Home() {
   const [products, setProducts] = useState([]);
 
