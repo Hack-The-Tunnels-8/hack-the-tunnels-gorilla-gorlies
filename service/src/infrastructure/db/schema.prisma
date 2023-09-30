@@ -17,6 +17,7 @@ model Product {
   price       Float
   imageUrl    String?
   lineItems   LineItem[]
+  reviews     Reviews[]
 }
 
 model Order {
@@ -50,4 +51,12 @@ model Account {
   role      String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+}
+
+model Reviews {
+  id        Int      @id @default(autoincrement())
+  product   Product  @relation(fields: [productId], references:[id])
+  productId Int
+  text      String
+  rating    Int
 }
