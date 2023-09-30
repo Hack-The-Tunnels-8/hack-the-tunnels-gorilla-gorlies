@@ -10,13 +10,13 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar__logo">
-        <Link to="/">Store Logo</Link>
+        <img className="logo" src="../../public/vite.svg" width="40"></img>
       </div>
       <div className="navbar__account">
         {loggedIn() === false ? (
           <>
-            <button onClick={() => navigate("/sign-up")}>Sign Up</button>
-            <button onClick={() => navigate("/login")}>Login</button>
+            <button className="navButton" onClick={() => navigate("/sign-up")}>Sign Up</button>
+            <button className="navButton" onClick={() => navigate("/login")}>Login</button>
           </>
         ) : (
           <button onClick={() => logout()}>Logout</button>

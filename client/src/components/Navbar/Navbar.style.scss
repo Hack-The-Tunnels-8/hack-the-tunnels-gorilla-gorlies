@@ -2,4 +2,19 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  position: fixed;
+  background-color: lightpink;
+}
+
+.navButton {
+  background-color: hotpink;
+  border: none;
+  border-radius: 25px;
+  margin: 10px;
+  padding: 8px;
+}
+
+.logo {
+  margin-left: 30px;
+  margin-top: 7px;
 }
