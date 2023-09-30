@@ -56,6 +56,7 @@ function Checkout() {
               src = {product.imageUrl}
             />
             <h2 className = "priceText">Price:{product.price}</h2>
+            <h2 className = "descriptionText">{product.description}</h2>
 
             
           </>
