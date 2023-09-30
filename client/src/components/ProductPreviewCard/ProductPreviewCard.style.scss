@@ -1,14 +1,24 @@
 .product-preview-card {
+  width: 12rem;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: lightpink;
+
+
   &__title {
     font-style: bold;
-    color: green;
+    color: black;
   }
 
   &__description {
-    color: blue;
+    color: white;
   }
 
   &__image {
-    width: 10rem;
+    
+    width: 11rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
   }
 }
