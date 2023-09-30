@@ -1,16 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 
 .home-page {
+  background-color: black;
+  background-size: 100% 100%;
+  margin:0 auto;
+
   *{
     font-family: 'Syne Mono', monospace;
   }
 
   &__title {
-    color: red;
+    color: hotpink;
+    text-align: center;
+    font-size: 3.5em;
+    padding-top: 1em;
+  }
+
+  &__subtext {
+    color: hotpink;
+    font-size: 2em;
+    text-align: center;
+    overflow: hidden;
+    border-right: .15em solid hotpink; //cursor
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+      typing 3s steps(60, end),
+      blink-caret .65s step-end 5;
+      width: 300px;
+  }
+
+  // typing effect
+  @keyframes typing {
+    from {width: 0}
+    to {width: 300px}
+  }
+
+  //cursor effect
+  @keyframes blink-caret {
+    from, to {border-corder: transparent}
+    50% {border-color: hotpink}
+  }
+
+  &__subTitle {
+    color: lightpink;
+    margin-left: 5em;
   }
 
   &__products {
-    margin: 1rem;
+    padding: 3em;
+    padding-top: 0.5em;
     justify-content: center;
     display:flex;
     flex-wrap: wrap;

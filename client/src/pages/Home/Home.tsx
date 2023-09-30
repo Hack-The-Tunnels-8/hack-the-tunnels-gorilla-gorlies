@@ -21,8 +21,8 @@ function Home() {
     <Page>
       <div className="home-page">
         <h1 className="home-page__title">Home</h1>
-        <p>Hello World</p>
-        <h2>Products:</h2>
+        <p className="home-page__subtext">Hello Gorlies</p>
+        <h2 className="home-page__subTitle">Products:</h2>
         <div className="home-page__products">
           {products.map((product) => (
             <Link to={`/products/${product.id}`} key={`${product.id}`}>
