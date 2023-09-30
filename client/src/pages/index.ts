@@ -5,3 +5,4 @@ export { Home } from "./Home";
 export { Login } from "./Login";
 export { Product } from "./Product";
 export { SignUp } from "./SignUp";
+export { _404Page } from "./_404Page"
