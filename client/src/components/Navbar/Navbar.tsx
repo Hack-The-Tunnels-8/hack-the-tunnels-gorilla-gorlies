@@ -19,7 +19,7 @@ function Navbar() {
             <button className="navButton" onClick={() => navigate("/login")}>Login</button>
           </>
         ) : (
-          <button onClick={() => logout()}>Logout</button>
+          <button className="navButton" onClick={() => logout()}>Logout</button>
         )}
       </div>
     </div>
